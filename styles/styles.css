@@ -235,42 +235,75 @@ html {
   overflow: hidden;
 }
 
-.headerIndex {
-  height: 89.5vh;
-}
-.headerIndex nav {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header nav img {
+  max-width: 4rem;
   margin-top: 2rem;
 }
-.headerIndex nav img {
-  max-width: 4rem;
-}
-.headerIndex nav ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  margin: 2rem 0 0 0;
 }
-.headerIndex nav ul a {
+header nav ul a {
   font-family: "Mali", cursive;
   color: #7A5FC4;
   padding-left: 2.5rem;
 }
-.headerIndex div {
+header div {
   text-align: center;
   padding-top: 6rem;
 }
-.headerIndex div h1 {
+header div h1 {
   font-family: "Sansita Swashed", cursive;
   font-size: 4rem;
 }
-.headerIndex div img {
+header div img {
   max-width: 5.5rem;
+}
+
+.headerIndex {
+  height: 92vh;
+}
+
+.mainContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+.mainContact .firstSec {
+  width: 50%;
+}
+.mainContact .firstSec img {
+  width: 75%;
+  margin: 0 0 9.5rem 5rem;
+}
+.mainContact .secondSec {
+  width: 35%;
+  margin: 17rem 0 0 8rem;
+}
+.mainContact .secondSec .followUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mainContact .secondSec .followUs a {
+  margin: 1rem;
+}
+.mainContact .secondSec .followUs a i {
+  font-size: 3rem;
+}
+.mainContact .secondSec .followUs a i:hover {
+  color: #ffa6d0;
 }
 
 footer {

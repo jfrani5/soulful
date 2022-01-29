@@ -1,19 +1,18 @@
-// Header for index.html
-.headerIndex {
-   height: 89.5vh;
+// General Header
+header {
 
    nav {
       display: flex;
       justify-content: space-between;
-      margin-top: 2rem;
 
       img {
          max-width: 4rem;
+         margin-top: 2rem;
       }
 
       ul {
          display: flex;
-         margin: 0;
+         margin: 2rem 0 0 0;
 
          a {
             font-family: $navAndFooter;
@@ -35,7 +34,10 @@
       img {
          max-width: 5.5rem;
       }
-   }
+   }   
+}
 
-   
+// Header for index.html
+.headerIndex {
+   height: 92vh;
 }

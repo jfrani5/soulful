@@ -1,0 +1,35 @@
+// Styles for contact.html
+.mainContact {
+   display: flex;
+   font-family: $body;
+
+   .firstSec {
+      width: 50%;
+
+      img {
+         width: 75%;
+         margin: 0 0 9.5rem 5rem;
+      }
+   }
+
+   .secondSec {
+      width: 35%;
+      margin: 17rem 0 0 8rem;
+
+      .followUs {
+         display: flex;
+
+         a {
+            margin: 1rem;
+
+            i {
+               font-size: 3rem;
+            }
+
+            i:hover {
+               color: $secondary;
+            }
+         }
+      }
+   }
+}
