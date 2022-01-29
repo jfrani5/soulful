@@ -1,0 +1,43 @@
+// VARIABLES
+
+   // Colors
+$primary: #7A5FC4;
+$secondary: #ffa6d0;
+
+   // Fonts
+$navAndFooter: 'Mali', cursive;
+$header: 'Sansita Swashed', cursive;
+$body: 'Open Sans', sans-serif;
+
+// IMPORTS
+@import "./partials/setup";
+@import "./partials/header";
+@import "./partials/footer";
+
+
+
+
+
+
+// GENERAL STYLES
+html {
+   font-size: 125%;
+}
+
+body {
+   color: $primary;
+}
+
+.wrapper {
+   max-width: 1200px;
+   width: 90%;
+   margin: 0 auto;
+}
+
+li {
+   list-style: none;
+   a {
+      text-decoration: none;
+   }
+}
+

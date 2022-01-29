@@ -1,0 +1,41 @@
+// Header for index.html
+.headerIndex {
+   height: 89.5vh;
+
+   nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+
+      img {
+         max-width: 4rem;
+      }
+
+      ul {
+         display: flex;
+         margin: 0;
+
+         a {
+            font-family: $navAndFooter;
+            color: $primary;
+            padding-left: 2.5rem;
+         }
+      }
+   }
+
+   div {
+      text-align: center;
+      padding-top: 6rem;
+
+      h1 {
+         font-family: $header;
+         font-size: 4rem;
+      }
+
+      img {
+         max-width: 5.5rem;
+      }
+   }
+
+   
+}

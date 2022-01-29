@@ -1,0 +1,19 @@
+// Footer
+footer {
+   background-color: $primary;
+   font-family: $navAndFooter;
+   padding: 1rem 0;
+   
+   .footerDiv {
+      display: flex;
+      color: white;
+
+      div i:first-child {
+         padding-right: 1rem;
+      }
+
+      p {
+         margin: 0 auto;
+      }
+   }
+}
