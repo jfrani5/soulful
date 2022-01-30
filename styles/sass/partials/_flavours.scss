@@ -1,6 +1,7 @@
 // Styles for flavours.html
 .mainFlavours {
    font-family: $body;
+   scroll-behavior: smooth;
    
    ul {
       display: flex;

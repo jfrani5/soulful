@@ -308,6 +308,7 @@ header div img {
 
 .mainFlavours {
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 .mainFlavours ul {
   display: -webkit-box;
@@ -329,6 +330,68 @@ header div img {
 }
 .mainFlavours ul li img {
   width: 100%;
+}
+
+.mainProducts {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  padding: 5rem 3rem 5rem 3rem;
+}
+.mainProducts .allBox {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 50px;
+  -webkit-box-shadow: 1px 5px whitesmoke;
+          box-shadow: 1px 5px whitesmoke;
+  height: 10.2rem;
+  margin-bottom: 5rem;
+}
+.mainProducts .allBox h2 {
+  font-size: 2.5rem;
+  width: 80%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0;
+}
+.mainProducts .allBox img {
+  width: 200px;
+  height: 200px;
+}
+.mainProducts .prodBoxOne,
+.mainProducts .prodBoxThree {
+  margin-left: auto;
+}
+.mainProducts .prodBoxOne img,
+.mainProducts .prodBoxThree img {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.mainProducts .prodBoxTwo,
+.mainProducts .prodBoxFour {
+  margin-right: auto;
+}
+.mainProducts .prodBoxTwo img,
+.mainProducts .prodBoxFour img {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.mainProducts .prodBoxTwo,
+.mainProducts .prodBoxThree,
+.mainProducts .prodBoxFour {
+  position: relative;
+}
+.mainProducts .prodBoxTwo {
+  right: 2px;
+}
+.mainProducts .prodBoxThree {
+  left: 1px;
+}
+.mainProducts .prodBoxFour {
+  right: 1px;
 }
 
 footer {
