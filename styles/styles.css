@@ -256,7 +256,7 @@ header nav ul {
 header nav ul a {
   font-family: "Mali", cursive;
   color: #7A5FC4;
-  padding-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 header div {
   text-align: center;
@@ -304,6 +304,31 @@ header div img {
 }
 .mainContact .secondSec .followUs a i:hover {
   color: #ffa6d0;
+}
+
+.mainFlavours {
+  font-family: "Open Sans", sans-serif;
+}
+.mainFlavours ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainFlavours ul li {
+  width: calc((100%/3) - 60px);
+  min-width: 220px;
+  margin: 30px;
+  padding: 25px 2%;
+  text-align: center;
+  list-style: none;
+}
+.mainFlavours ul li img {
+  width: 100%;
 }
 
 footer {

@@ -1,0 +1,23 @@
+// Styles for flavours.html
+.mainFlavours {
+   font-family: $body;
+   
+   ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+         width: calc((100%/3) - 60px);
+         min-width: 220px;
+         margin: 30px;
+         padding: 25px 2%;
+         text-align: center;
+         list-style: none;
+
+         img {
+            width: 100%;
+         }
+      }
+   }
+}
