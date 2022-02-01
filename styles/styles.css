@@ -302,7 +302,8 @@ header div img {
 .mainContact .secondSec .followUs a i {
   font-size: 3rem;
 }
-.mainContact .secondSec .followUs a i:hover {
+.mainContact .secondSec .followUs a i:hover,
+.mainContact .secondSec .followUs a i:focus {
   color: #ffa6d0;
 }
 
@@ -321,7 +322,7 @@ header div img {
           justify-content: center;
 }
 .mainFlavours ul li {
-  width: calc((100%/3) - 60px);
+  width: calc((100% / 3) - 60px);
   min-width: 220px;
   margin: 30px;
   padding: 25px 2%;
@@ -356,6 +357,15 @@ header div img {
   -ms-flex-item-align: center;
       align-self: center;
   margin: 0;
+}
+.mainProducts .allBox h2 a {
+  color: #7A5FC4;
+  text-decoration: none;
+  padding: 2rem;
+}
+.mainProducts .allBox h2 a:hover,
+.mainProducts .allBox h2 a:focus {
+  color: #ffa6d0;
 }
 .mainProducts .allBox img {
   width: 200px;
@@ -392,6 +402,68 @@ header div img {
 }
 .mainProducts .prodBoxFour {
   right: 1px;
+}
+
+.mainReviews {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  padding: 5rem 3rem 5rem 3rem;
+}
+.mainReviews div {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50px;
+  height: 10.2rem;
+  margin-bottom: 5rem;
+}
+.mainReviews div p {
+  padding: 2rem 4rem 0 4rem;
+}
+.mainReviews div .rightAlign {
+  font-weight: bold;
+  text-align: right;
+  padding: 0 5rem 0 0;
+}
+.mainReviews .purple {
+  background-color: rgba(122, 95, 196, 0.2);
+}
+.mainReviews .pink {
+  background-color: rgba(255, 166, 208, 0.2);
+  color: #fd7db9;
+}
+
+.mainBoxes,
+.mainCakes,
+.mainTowers,
+.mainSpecials {
+  font-family: "Open Sans", sans-serif;
+}
+.mainBoxes h1,
+.mainCakes h1,
+.mainTowers h1,
+.mainSpecials h1 {
+  text-align: center;
+  margin: 4rem;
+}
+
+.mainBoxes .allDivBoxes,
+.mainCakes .allDivBoxes {
+  padding: 0 5rem 4rem 5rem;
+}
+.mainBoxes .allDivBoxes .divBoxes,
+.mainCakes .allDivBoxes .divBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainBoxes .allDivBoxes .divBoxes img,
+.mainCakes .allDivBoxes .divBoxes img {
+  width: calc((100% / 2) - 1rem);
 }
 
 footer {

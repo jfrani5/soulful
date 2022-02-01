@@ -1,0 +1,38 @@
+// General styles
+.mainBoxes,
+.mainCakes,
+.mainTowers,
+.mainSpecials {
+   font-family: $body;
+
+   h1 {
+      text-align: center;
+      margin: 4rem;
+   }
+}
+
+// Styles for boxes.html and cakes.html
+.mainBoxes,
+.mainCakes {
+
+   .allDivBoxes {
+      padding: 0 5rem 4rem 5rem;
+      
+      .divBoxes {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         
+         img {
+            width: calc((100% / 2) - 1rem);
+         }
+      }
+   }
+}
+
+// Styles for towers.html and specials.html
+.mainTowers,
+.mainSpecials {
+
+
+}

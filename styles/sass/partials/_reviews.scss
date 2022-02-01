@@ -1,0 +1,32 @@
+.mainReviews {
+   font-family: $body;
+   scroll-behavior: smooth;
+   padding: 5rem 3rem 5rem 3rem;
+
+   div {
+      display: inline-block;
+      border: 2px solid white;
+      border-radius: 50px;
+      height: 10.2rem;
+      margin-bottom: 5rem;
+
+      p {
+         padding: 2rem 4rem 0 4rem;
+      }
+
+      .rightAlign {
+         font-weight: bold;
+         text-align: right;
+         padding: 0 5rem 0 0;
+      }
+   }
+
+   .purple {
+      background-color: rgb(122, 95, 196, 0.2);
+   }
+
+   .pink {
+      background-color: rgb(255, 166, 208, 0.2);
+      color: #fd7db9;
+   }
+}

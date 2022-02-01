@@ -18,6 +18,17 @@
          text-align: center;
          align-self: center;
          margin: 0;
+
+         a {
+            color: $primary;
+            text-decoration: none;
+            padding: 2rem;
+         }
+
+         a:hover,
+         a:focus {
+            color: $secondary;
+         }
       }
 
       img {
