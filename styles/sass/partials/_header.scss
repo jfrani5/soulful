@@ -1,6 +1,11 @@
 // General Header
 header {
 
+   .menu,
+   i.fa-bars {
+      display: none;
+   }
+
    nav {
       display: flex;
       justify-content: space-between;
@@ -24,7 +29,7 @@ header {
 
    div {
       text-align: center;
-      padding-top: 6rem;
+      padding-top: 8rem;
 
       h1 {
          font-family: $header;
@@ -39,5 +44,25 @@ header {
 
 // Header for index.html
 .headerIndex {
-   height: 92vh;
+   height: 93.5vh;
+}
+
+// Media queries
+@media (max-width: 750px) {
+   .hide {
+      display: none;
+   }
+
+   header i.fa-bars {
+      color: $primary;
+      display: flex;
+      font-size: 2rem;
+      padding: 1rem;
+      margin-left: auto;
+   }
+
+   header div {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+   }
 }

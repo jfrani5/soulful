@@ -33,6 +33,17 @@
 // Styles for towers.html and specials.html
 .mainTowers,
 .mainSpecials {
+   padding: 0 5rem;
 
+   .tsBoxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 4rem;
+
+      img {
+            width: calc((100% / 2) - 1rem);
+         }
+   }
 
 }

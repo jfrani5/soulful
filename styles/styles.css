@@ -235,6 +235,10 @@ html {
   overflow: hidden;
 }
 
+header .menu,
+header i.fa-bars {
+  display: none;
+}
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,7 +264,7 @@ header nav ul a {
 }
 header div {
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 8rem;
 }
 header div h1 {
   font-family: "Sansita Swashed", cursive;
@@ -271,25 +275,46 @@ header div img {
 }
 
 .headerIndex {
-  height: 92vh;
+  height: 93.5vh;
 }
 
+@media (max-width: 750px) {
+  .hide {
+    display: none;
+  }
+
+  header i.fa-bars {
+    color: #7A5FC4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-left: auto;
+  }
+
+  header div {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
 .mainContact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Open Sans", sans-serif;
+  padding-bottom: 5.5rem;
 }
 .mainContact .firstSec {
   width: 50%;
 }
 .mainContact .firstSec img {
   width: 75%;
-  margin: 0 0 9.5rem 5rem;
+  margin: 3rem 0 10rem 5rem;
 }
 .mainContact .secondSec {
   width: 35%;
-  margin: 17rem 0 0 8rem;
+  margin: 21rem 0 2rem 8rem;
 }
 .mainContact .secondSec .followUs {
   display: -webkit-box;
@@ -463,6 +488,27 @@ header div img {
 }
 .mainBoxes .allDivBoxes .divBoxes img,
 .mainCakes .allDivBoxes .divBoxes img {
+  width: calc((100% / 2) - 1rem);
+}
+
+.mainTowers,
+.mainSpecials {
+  padding: 0 5rem;
+}
+.mainTowers .tsBoxes,
+.mainSpecials .tsBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 4rem;
+}
+.mainTowers .tsBoxes img,
+.mainSpecials .tsBoxes img {
   width: calc((100% / 2) - 1rem);
 }
 
