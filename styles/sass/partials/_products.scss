@@ -1,7 +1,7 @@
 .mainProducts {
    font-family: $body;
    scroll-behavior: smooth;
-   padding: 5rem 3rem 5rem 3rem;
+   padding: 5rem 3rem;
 
    .allBox {
       background-color: white;
@@ -76,6 +76,28 @@
    .prodBoxFour {
       right: 1px;
    }
+}
 
-   
+// Media queries for products
+@media (max-width: 768px) {
+   .mainProducts .allBox img {
+      display: none;
+   }
+}
+
+@media (max-width: 560px) {
+   .mainProducts {
+      padding: 5rem 1rem;
+   }
+}
+
+@media (max-width: 460px) {
+   .mainProducts .allBox h2 {
+      font-size: 2rem;
+      width: 87%;
+   }
+
+   .mainProducts {
+      padding: 2rem 1rem;
+   }
 }

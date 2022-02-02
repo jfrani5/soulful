@@ -1,11 +1,6 @@
 // General Header
 header {
-
-   .menu,
-   i.fa-bars {
-      display: none;
-   }
-
+  
    nav {
       display: flex;
       justify-content: space-between;
@@ -13,6 +8,11 @@ header {
       img {
          max-width: 4rem;
          margin-top: 2rem;
+      }
+
+      img:hover,
+      img:focus {
+         max-width: 4.5rem;
       }
 
       ul {
@@ -24,22 +24,45 @@ header {
             color: $primary;
             margin-left: 2.5rem;
          }
+
+         a:hover,
+         a:focus {
+            font-size: 1.3rem;
+            color: $secondary;
+         }
+      }
+
+      .burger {
+         display: none;
+         cursor: pointer;
+
+         i {
+            font-size: 1.7rem;
+            padding-top: 2rem;
+         }
+
+         i:hover {
+            color: $secondary;
+         }
       }
    }
 
-   div {
+   .heaven {
       text-align: center;
       padding-top: 8rem;
 
       h1 {
          font-family: $header;
          font-size: 4rem;
+         animation: soulful 2s 3;
       }
 
       img {
          max-width: 5.5rem;
       }
    }   
+
+   
 }
 
 // Header for index.html
@@ -47,22 +70,108 @@ header {
    height: 93.5vh;
 }
 
-// Media queries
-@media (max-width: 750px) {
-   .hide {
-      display: none;
+// Media queries for header
+@media (max-width: 768px) {
+   body {
+      overflow-x: hidden;
    }
 
-   header i.fa-bars {
-      color: $primary;
+   .menu {
       display: flex;
-      font-size: 2rem;
-      padding: 1rem;
-      margin-left: auto;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      width: 32%;
+      height: 25%;
+      top: 2.5rem;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
    }
 
-   header div {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+   .menu li {
+      opacity: 0;
    }
+
+   header nav .burger {
+      display: block;
+   }
+}
+
+@media (max-width: 665px) {
+   .menu {
+      width: 35%;
+   }
+}
+
+@media (max-width: 630px) {
+   .menu {
+      width: 40%;
+   }
+}
+
+@media (max-width: 555px) {
+   .menu {
+      width: 45%;
+   }
+}
+
+@media (max-width: 480px) {
+   header .heaven h1 {
+      font-size: 3rem;
+   }
+   
+   .menu {
+      width: 50%;
+   }
+}
+
+@media (max-width: 420px) {
+   .menu {
+      width: 55%;
+   }
+}
+
+@media (max-width: 390px) {
+   .menu {
+      width: 60%;
+   }
+}
+
+// Animations
+.slide {
+      transform: translateX(0%);
+   }
+
+@keyframes slideOut {
+   from {
+      opacity: 0;
+      transform: translateX(75px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+}
+
+@keyframes soulful {
+    0% { 
+        transform: scale(1); 
+    }
+    20% { 
+        transform: scale(1); 
+    }
+    40% { 
+        transform: scale(1.1); 
+    }
+    60% { 
+        transform: scale(1); 
+    }
+    80% { 
+        transform: scale(1.07); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
 }

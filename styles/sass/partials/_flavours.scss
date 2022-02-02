@@ -22,3 +22,33 @@
       }
    }
 }
+
+// Media queries for flavours
+@media (max-width: 768px) {
+   .mainFlavours ul {
+      padding-left: 0;
+   }
+}
+
+@media (max-width: 700px) {
+   .mainFlavours ul {
+      flex-direction: column;
+   }
+
+   .mainFlavours ul li {
+      min-width: 15rem;
+      margin: 0 auto;
+   }
+}
+
+@media (max-width: 530px) {
+   .mainFlavours ul li {
+      min-width: 10rem;
+   }
+}
+
+@media (max-width: 425px) {
+   .mainFlavours ul li {
+      min-width: 7rem;
+   }
+}

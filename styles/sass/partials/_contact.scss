@@ -8,8 +8,8 @@
       width: 50%;
 
       img {
-         width: 75%;
-         margin: 3rem 0 10rem 5rem;
+         width: 85%;
+         margin: 3rem 0 7rem 5rem;
       }
    }
 
@@ -33,5 +33,67 @@
             }
          }
       }
+   }
+}
+
+// Media queries for contact
+@media (max-width: 1150px) {
+   .mainContact .firstSec img {
+      margin: 3rem 0 0 5rem;
+   }
+}
+
+@media (max-width: 1100px) {
+   .mainContact .firstSec img {
+      margin: 3rem 0 0 3rem;
+   }
+
+   .mainContact .secondSec {
+      margin: 20rem 0 2rem 5rem;
+   }
+}
+
+@media (max-width: 1000px) {
+   .mainContact .secondSec {
+      margin: 17rem 0 2rem 5rem;
+   }
+}
+
+@media (max-width: 900px) {
+   .mainContact .secondSec {
+      margin: 17rem 0 2rem 3rem;
+   }
+}
+
+
+@media (max-width: 885px) {
+   .mainContact {
+      flex-direction: column;
+   }
+   .mainContact .firstSec{
+      width: 75%;
+      margin: 0 auto;
+   }
+   .mainContact .firstSec img{
+      width: 100%;
+      margin: 0;
+   }
+   .mainContact .secondSec {
+      width: 92%;
+      margin: 0 auto;
+      padding-top: 4rem;
+   }
+}
+
+@media (max-width: 475px) {
+   .mainContact {
+      padding-bottom: 3rem;
+   }
+   .mainContact .firstSec{
+      width: 90%;
+      padding-top: 2rem;
+   }
+   .mainContact .secondSec {
+      padding-top: 2rem;
    }
 }
