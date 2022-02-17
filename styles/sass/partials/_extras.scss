@@ -7,7 +7,7 @@
 
    h1 {
       text-align: center;
-      margin: 4rem;
+      margin: 4rem 0;
    }
 }
 
@@ -33,7 +33,7 @@
 // Styles for towers.html and specials.html
 .mainTowers,
 .mainSpecials {
-   padding: 0 5rem;
+   padding: 0 2rem;
 
    .tsBoxes {
       display: flex;
@@ -45,5 +45,23 @@
             width: calc((100% / 2) - 1rem);
          }
    }
+}
 
+// Media Queries
+@media (max-width: 720px) {
+   .mainBoxes,
+   .mainCakes {
+      .allDivBoxes {
+         padding: 0 2rem 4rem 2rem;
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .mainBoxes,
+   .mainCakes {
+      .allDivBoxes {
+         padding: 0 0 4rem 0;
+      }
+   }
 }

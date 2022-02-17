@@ -248,9 +248,14 @@ header nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header nav a {
+  height: 4rem;
+}
 header nav img {
   max-width: 4rem;
   margin-top: 2rem;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 header nav img:hover,
 header nav img:focus {
@@ -263,9 +268,14 @@ header nav ul {
   margin: 2rem 0 0 0;
 }
 header nav ul a {
+  display: inline-block;
   font-family: "Mali", cursive;
   color: #7A5FC4;
   margin-left: 2.5rem;
+  width: 4.5rem;
+  height: 0;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 header nav ul a:hover,
 header nav ul a:focus {
@@ -302,10 +312,6 @@ header .heaven img {
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -485,6 +491,8 @@ header .heaven img {
 }
 .mainContact .secondSec .followUs a i {
   font-size: 3rem;
+  -webkit-transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-in 0s;
 }
 .mainContact .secondSec .followUs a i:hover,
 .mainContact .secondSec .followUs a i:focus {
@@ -701,13 +709,12 @@ header .heaven img {
 .mainReviews {
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
-  padding: 5rem 3rem 5rem 3rem;
+  padding: 5rem 3rem 0 3rem;
 }
 .mainReviews div {
   display: inline-block;
   border: 2px solid white;
   border-radius: 50px;
-  height: 10.2rem;
   margin-bottom: 5rem;
 }
 .mainReviews div p {
@@ -716,7 +723,7 @@ header .heaven img {
 .mainReviews div .rightAlign {
   font-weight: bold;
   text-align: right;
-  padding: 0 5rem 0 0;
+  padding: 1rem 5rem 1rem 0;
 }
 .mainReviews .purple {
   background-color: rgba(122, 95, 196, 0.2);
@@ -726,6 +733,16 @@ header .heaven img {
   color: #fd7db9;
 }
 
+@media (max-width: 650px) {
+  .mainReviews {
+    padding: 5rem 0rem;
+  }
+}
+@media (max-width: 490px) {
+  .mainReviews div p {
+    padding: 2rem 1rem 0 1rem;
+  }
+}
 .mainBoxes,
 .mainCakes,
 .mainTowers,
@@ -737,7 +754,7 @@ header .heaven img {
 .mainTowers h1,
 .mainSpecials h1 {
   text-align: center;
-  margin: 4rem;
+  margin: 4rem 0;
 }
 
 .mainBoxes .allDivBoxes,
@@ -762,7 +779,7 @@ header .heaven img {
 
 .mainTowers,
 .mainSpecials {
-  padding: 0 5rem;
+  padding: 0 2rem;
 }
 .mainTowers .tsBoxes,
 .mainSpecials .tsBoxes {
@@ -781,6 +798,18 @@ header .heaven img {
   width: calc((100% / 2) - 1rem);
 }
 
+@media (max-width: 720px) {
+  .mainBoxes .allDivBoxes,
+.mainCakes .allDivBoxes {
+    padding: 0 2rem 4rem 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .mainBoxes .allDivBoxes,
+.mainCakes .allDivBoxes {
+    padding: 0 0 4rem 0;
+  }
+}
 footer {
   background-color: #7A5FC4;
   font-family: "Mali", cursive;

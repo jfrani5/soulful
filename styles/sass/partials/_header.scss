@@ -5,9 +5,14 @@ header {
       display: flex;
       justify-content: space-between;
 
+      a {
+         height: 4rem;
+      }
+
       img {
          max-width: 4rem;
          margin-top: 2rem;
+         transition: all 0.3s linear 0s;
       }
 
       img:hover,
@@ -20,9 +25,13 @@ header {
          margin: 2rem 0 0 0;
 
          a {
+            display: inline-block;
             font-family: $navAndFooter;
             color: $primary;
             margin-left: 2.5rem;
+            width: 4.5rem;
+            height: 0;
+            transition: all 0.3s ease-in-out 0s;
          }
 
          a:hover,
@@ -61,8 +70,6 @@ header {
          max-width: 5.5rem;
       }
    }   
-
-   
 }
 
 // Header for index.html
@@ -72,9 +79,9 @@ header {
 
 // Media queries for header
 @media (max-width: 768px) {
-   body {
-      overflow-x: hidden;
-   }
+   // body {
+   //    overflow-x: hidden;
+   // }
 
    .menu {
       display: flex;

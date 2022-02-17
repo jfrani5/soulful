@@ -1,13 +1,13 @@
 .mainReviews {
    font-family: $body;
    scroll-behavior: smooth;
-   padding: 5rem 3rem 5rem 3rem;
+   padding: 5rem 3rem 0 3rem;
 
    div {
       display: inline-block;
       border: 2px solid white;
       border-radius: 50px;
-      height: 10.2rem;
+      // height: 10.2rem;
       margin-bottom: 5rem;
 
       p {
@@ -17,7 +17,7 @@
       .rightAlign {
          font-weight: bold;
          text-align: right;
-         padding: 0 5rem 0 0;
+         padding: 1rem 5rem 1rem 0;
       }
    }
 
@@ -28,5 +28,18 @@
    .pink {
       background-color: rgb(255, 166, 208, 0.2);
       color: #fd7db9;
+   }
+}
+
+// Media Queries 
+@media (max-width: 650px) {
+   .mainReviews {
+      padding: 5rem 0rem;
+   }
+}
+
+@media (max-width: 490px) {
+   .mainReviews div p {
+      padding: 2rem 1rem 0 1rem;
    }
 }
