@@ -79,9 +79,9 @@ header {
 
 // Media queries for header
 @media (max-width: 768px) {
-   // body {
-   //    overflow-x: hidden;
-   // }
+   nav {
+      overflow-x: hidden;
+   }
 
    .menu {
       display: flex;

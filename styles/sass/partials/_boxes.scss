@@ -1,0 +1,59 @@
+// Styles for boxes.html
+.mainBoxes {
+   .allDivBoxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 50%;
+      margin: 0 auto;
+      padding-bottom: 3rem;
+
+      .boxSize {
+         width: 50%;
+
+         img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 4px 4px 7px 1px $secondary;
+         }
+      }
+
+      .boxInfo {
+         width: 27%;
+         align-self: center;
+      }
+   }
+}
+
+// Media Queries
+@media (max-width: 895px) {
+   .mainBoxes .allDivBoxes {
+      width: 75%;
+   }
+}
+
+@media (max-width: 600px) {
+   .mainBoxes .allDivBoxes {
+      width: 85%;
+
+      .boxInfo {
+         width: 30%;
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .mainBoxes .allDivBoxes {
+      width: 100%;
+      flex-direction: column;
+
+      .boxSize {
+         margin: 0 auto;
+      }
+
+      .boxInfo {
+         width: 50%;
+         text-align: center;
+      }
+   }
+}
