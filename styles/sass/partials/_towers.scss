@@ -1,0 +1,27 @@
+// Styles for towers.html
+.mainTowers {
+   .towerImages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 3rem;
+
+      img {
+         width: 40%;
+         border-radius: 10px;
+         box-shadow: 4px 4px 7px 1px $secondary;
+      }
+   }
+}
+
+// Media Queries
+@media (max-width: 575px) {
+   .mainTowers .towerImages {
+      margin: 0 2rem;      
+   }
+
+   .mainTowers .towerImages img {
+      width: 100%;
+      margin-bottom: 2rem;
+   }
+}

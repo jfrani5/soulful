@@ -822,6 +822,58 @@ header .heaven img {
     margin-bottom: 2rem;
   }
 }
+.mainTowers .towerImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.mainTowers .towerImages img {
+  width: 40%;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 7px 1px #ffa6d0;
+          box-shadow: 4px 4px 7px 1px #ffa6d0;
+}
+
+@media (max-width: 575px) {
+  .mainTowers .towerImages {
+    margin: 0 2rem;
+  }
+
+  .mainTowers .towerImages img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.mainSpecials .specialChar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+}
+.mainSpecials .specialChar li {
+  padding-bottom: 3rem;
+}
+.mainSpecials .specialChar li img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 7px 1px #ffa6d0;
+          box-shadow: 4px 4px 7px 1px #ffa6d0;
+}
+
+@media (max-width: 750px) {
+  .mainSpecials .specialChar {
+    width: 75%;
+  }
+}
 footer {
   background-color: #7A5FC4;
   font-family: "Mali", cursive;
