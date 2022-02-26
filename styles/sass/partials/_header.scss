@@ -96,6 +96,7 @@ header {
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
       background-color: rgb(255, 255, 255);
+      z-index: 1;
    }
 
    .menu li {

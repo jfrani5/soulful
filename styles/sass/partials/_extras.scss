@@ -3,10 +3,18 @@
 .mainCakes,
 .mainTowers,
 .mainSpecials {
-   font-family: $body;
-
    h1 {
       text-align: center;
       margin: 4rem 0;
    }
+}
+
+
+.mainBoxes,
+.mainCakes,
+.mainTowers,
+.mainSpecials,
+.mainFlavours {
+   font-family: $body;
+   scroll-behavior: smooth;
 }

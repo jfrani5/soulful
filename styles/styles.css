@@ -342,6 +342,7 @@ header .heaven img {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
     background-color: white;
+    z-index: 1;
   }
 
   .menu li {
@@ -566,58 +567,36 @@ header .heaven img {
     padding-top: 2rem;
   }
 }
-.mainFlavours {
-  font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
-}
 .mainFlavours ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0;
 }
 .mainFlavours ul li {
-  width: calc(33.3333333333% - 60px);
-  min-width: 220px;
-  margin: 30px;
-  padding: 25px 2%;
+  width: calc(33.3333333333% - 2rem);
   text-align: center;
-  list-style: none;
+  margin: 2rem 0;
 }
 .mainFlavours ul li img {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .mainFlavours ul {
-    padding-left: 0;
+@media (max-width: 785px) {
+  .mainFlavours ul li {
+    width: 48%;
   }
 }
-@media (max-width: 700px) {
-  .mainFlavours ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
+@media (max-width: 545px) {
   .mainFlavours ul li {
-    min-width: 15rem;
+    width: 90%;
     margin: 0 auto;
-  }
-}
-@media (max-width: 530px) {
-  .mainFlavours ul li {
-    min-width: 10rem;
-  }
-}
-@media (max-width: 425px) {
-  .mainFlavours ul li {
-    min-width: 7rem;
   }
 }
 .mainProducts {
@@ -707,18 +686,21 @@ header .heaven img {
     padding: 2rem 1rem 0 1rem;
   }
 }
-.mainBoxes,
-.mainCakes,
-.mainTowers,
-.mainSpecials {
-  font-family: "Open Sans", sans-serif;
-}
 .mainBoxes h1,
 .mainCakes h1,
 .mainTowers h1,
 .mainSpecials h1 {
   text-align: center;
   margin: 4rem 0;
+}
+
+.mainBoxes,
+.mainCakes,
+.mainTowers,
+.mainSpecials,
+.mainFlavours {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .mainBoxes .allDivBoxes {
@@ -759,6 +741,9 @@ header .heaven img {
   }
   .mainBoxes .allDivBoxes .boxInfo {
     width: 30%;
+  }
+  .mainBoxes .allDivBoxes .boxSize {
+    width: 80%;
   }
 }
 @media (max-width: 480px) {
@@ -850,7 +835,7 @@ header .heaven img {
     margin-bottom: 2rem;
   }
 }
-.mainSpecials .specialChar {
+.mainSpecials ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,10 +845,10 @@ header .heaven img {
   margin: 0 auto;
   padding: 0;
 }
-.mainSpecials .specialChar li {
+.mainSpecials ul li {
   padding-bottom: 3rem;
 }
-.mainSpecials .specialChar li img {
+.mainSpecials ul li img {
   width: 100%;
   border-radius: 10px;
   -webkit-box-shadow: 4px 4px 7px 1px #ffa6d0;
@@ -871,7 +856,7 @@ header .heaven img {
 }
 
 @media (max-width: 750px) {
-  .mainSpecials .specialChar {
+  .mainSpecials ul {
     width: 75%;
   }
 }

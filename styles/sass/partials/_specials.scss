@@ -1,6 +1,6 @@
 // Styles for specials.html
 .mainSpecials {
-   .specialChar {
+   ul {
       display: flex;
       flex-wrap: wrap;
       width: 60%;
@@ -21,7 +21,7 @@
 
 // Media Queries
 @media (max-width: 750px) {
-   .mainSpecials .specialChar {
+   .mainSpecials ul {
       width: 75%;
    }
 }

@@ -1,20 +1,16 @@
 // Styles for flavours.html
 .mainFlavours {
-   font-family: $body;
-   scroll-behavior: smooth;
-   
    ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding: 0;
 
-      li {
-         width: calc((100% / 3) - 60px);
-         min-width: 220px;
-         margin: 30px;
-         padding: 25px 2%;
+      li { 
+         width: calc((100% / 3) - 2rem);
          text-align: center;
-         list-style: none;
+         margin: 2rem 0;
 
          img {
             width: 100%;
@@ -24,31 +20,15 @@
 }
 
 // Media queries for flavours
-@media (max-width: 768px) {
-   .mainFlavours ul {
-      padding-left: 0;
+@media (max-width: 785px) {
+   .mainFlavours ul li {
+      width: 48%;
    }
 }
 
-@media (max-width: 700px) {
-   .mainFlavours ul {
-      flex-direction: column;
-   }
-
+@media (max-width: 545px) {
    .mainFlavours ul li {
-      min-width: 15rem;
+      width: 90%;
       margin: 0 auto;
-   }
-}
-
-@media (max-width: 530px) {
-   .mainFlavours ul li {
-      min-width: 10rem;
-   }
-}
-
-@media (max-width: 425px) {
-   .mainFlavours ul li {
-      min-width: 7rem;
    }
 }
