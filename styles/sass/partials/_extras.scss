@@ -2,19 +2,33 @@
 .mainBoxes,
 .mainCakes,
 .mainTowers,
-.mainSpecials {
-   h1 {
-      text-align: center;
-      margin: 4rem 0;
-   }
-}
-
-
-.mainBoxes,
-.mainCakes,
-.mainTowers,
 .mainSpecials,
 .mainFlavours {
    font-family: $body;
    scroll-behavior: smooth;
+
+   h1 {
+      text-align: center;
+      margin: 4rem 0;
+   }
+
+   img {
+      border-radius: 10px;
+      box-shadow: 4px 4px 7px 1px $primary;
+   }
+}
+
+.navBack {
+   font-family: $navAndFooter;
+   text-align: right;
+   padding: 2rem 0;
+
+   a {
+      text-decoration: none;
+   }
+
+   a:hover,
+   a:focus {
+      color: $secondary;
+   }
 }

@@ -597,6 +597,7 @@ header .heaven img {
   .mainFlavours ul li {
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 3rem;
   }
 }
 .mainProducts {
@@ -686,14 +687,6 @@ header .heaven img {
     padding: 2rem 1rem 0 1rem;
   }
 }
-.mainBoxes h1,
-.mainCakes h1,
-.mainTowers h1,
-.mainSpecials h1 {
-  text-align: center;
-  margin: 4rem 0;
-}
-
 .mainBoxes,
 .mainCakes,
 .mainTowers,
@@ -701,6 +694,36 @@ header .heaven img {
 .mainFlavours {
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
+}
+.mainBoxes h1,
+.mainCakes h1,
+.mainTowers h1,
+.mainSpecials h1,
+.mainFlavours h1 {
+  text-align: center;
+  margin: 4rem 0;
+}
+.mainBoxes img,
+.mainCakes img,
+.mainTowers img,
+.mainSpecials img,
+.mainFlavours img {
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 7px 1px #7A5FC4;
+          box-shadow: 4px 4px 7px 1px #7A5FC4;
+}
+
+.navBack {
+  font-family: "Mali", cursive;
+  text-align: right;
+  padding: 2rem 0;
+}
+.navBack a {
+  text-decoration: none;
+}
+.navBack a:hover,
+.navBack a:focus {
+  color: #ffa6d0;
 }
 
 .mainBoxes .allDivBoxes {
@@ -720,9 +743,6 @@ header .heaven img {
 }
 .mainBoxes .allDivBoxes .boxSize img {
   width: 100%;
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 7px 1px #ffa6d0;
-          box-shadow: 4px 4px 7px 1px #ffa6d0;
 }
 .mainBoxes .allDivBoxes .boxInfo {
   width: 27%;
@@ -785,9 +805,6 @@ header .heaven img {
 }
 .mainCakes .allDivCake .allCakes img {
   width: 40%;
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 7px 1px #ffa6d0;
-          box-shadow: 4px 4px 7px 1px #ffa6d0;
 }
 
 @media (max-width: 820px) {
@@ -820,9 +837,6 @@ header .heaven img {
 }
 .mainTowers .towerImages img {
   width: 40%;
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 7px 1px #ffa6d0;
-          box-shadow: 4px 4px 7px 1px #ffa6d0;
 }
 
 @media (max-width: 575px) {
@@ -850,9 +864,6 @@ header .heaven img {
 }
 .mainSpecials ul li img {
   width: 100%;
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 7px 1px #ffa6d0;
-          box-shadow: 4px 4px 7px 1px #ffa6d0;
 }
 
 @media (max-width: 750px) {
