@@ -5,16 +5,17 @@
 .mainSpecials,
 .mainFlavours {
    font-family: $body;
-   scroll-behavior: smooth;
+   scroll-behavior: smooth; 
+   padding-bottom: 10rem;
 
    h1 {
       text-align: center;
-      margin: 4rem 0;
+      margin: 4rem 0 8rem 0;
    }
 
    img {
       border-radius: 10px;
-      box-shadow: 4px 4px 7px 1px $primary;
+      box-shadow: 4px 4px 7px 1px #e6e6e6;
    }
 }
 

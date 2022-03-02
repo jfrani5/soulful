@@ -4,11 +4,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-top: 3rem;
+      margin-top: 6rem;
+      // margin-bottom: 10rem;
       padding: 0;
 
       li { 
-         width: calc((100% / 3) - 2rem);
+         width: calc((100% / 2) - 2rem);
          text-align: center;
          margin: 2rem 0;
 

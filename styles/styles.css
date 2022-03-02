@@ -576,11 +576,11 @@ header .heaven img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 3rem;
+  margin-top: 6rem;
   padding: 0;
 }
 .mainFlavours ul li {
-  width: calc(33.3333333333% - 2rem);
+  width: calc(50% - 2rem);
   text-align: center;
   margin: 2rem 0;
 }
@@ -615,14 +615,16 @@ header .heaven img {
           justify-content: center;
   border: 2px solid white;
   border-radius: 50px;
-  -webkit-box-shadow: 1px 5px whitesmoke;
-          box-shadow: 1px 5px whitesmoke;
+  -webkit-box-shadow: 5px -3px whitesmoke;
+          box-shadow: 5px -3px whitesmoke;
   height: 10.2rem;
-  width: 75%;
+  width: 65%;
   margin: 0 auto 5rem auto;
 }
 .mainProducts .allBox h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-family: "Mali";
+  font-weight: 600;
   text-align: center;
   -ms-flex-item-align: center;
       align-self: center;
@@ -694,6 +696,7 @@ header .heaven img {
 .mainFlavours {
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
+  padding-bottom: 10rem;
 }
 .mainBoxes h1,
 .mainCakes h1,
@@ -701,7 +704,7 @@ header .heaven img {
 .mainSpecials h1,
 .mainFlavours h1 {
   text-align: center;
-  margin: 4rem 0;
+  margin: 4rem 0 8rem 0;
 }
 .mainBoxes img,
 .mainCakes img,
@@ -709,8 +712,8 @@ header .heaven img {
 .mainSpecials img,
 .mainFlavours img {
   border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 7px 1px #7A5FC4;
-          box-shadow: 4px 4px 7px 1px #7A5FC4;
+  -webkit-box-shadow: 4px 4px 7px 1px #e6e6e6;
+          box-shadow: 4px 4px 7px 1px #e6e6e6;
 }
 
 .navBack {
@@ -802,6 +805,7 @@ header .heaven img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 1rem;
 }
 .mainCakes .allDivCake .allCakes img {
   width: 40%;
@@ -885,7 +889,16 @@ footer .footerDiv {
 footer .footerDiv div i:first-child {
   padding-right: 1rem;
 }
+footer .footerDiv a {
+  text-decoration: none;
+  color: white;
+}
+footer .footerDiv a:hover,
+footer .footerDiv a:focus {
+  color: #ffa6d0;
+}
 footer .footerDiv p {
+  font-size: 0.8rem;
   margin: 0 auto;
 }
 
