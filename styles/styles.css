@@ -473,19 +473,25 @@ header .heaven img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Open Sans", sans-serif;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Mali", sans-serif;
+  height: 100vh;
   padding-bottom: 5.5rem;
 }
 .mainContact .firstSec {
   width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .mainContact .firstSec img {
-  width: 85%;
-  margin: 3rem 0 7rem 5rem;
+  width: 100%;
 }
 .mainContact .secondSec {
   width: 35%;
-  margin: 21rem 0 2rem 8rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 3rem;
 }
 .mainContact .secondSec .followUs {
   display: -webkit-box;
@@ -505,66 +511,26 @@ header .heaven img {
   color: #ffa6d0;
 }
 
-@media (max-width: 1150px) {
-  .mainContact .firstSec img {
-    margin: 3rem 0 0 5rem;
-  }
-}
-@media (max-width: 1100px) {
-  .mainContact .firstSec img {
-    margin: 3rem 0 0 3rem;
-  }
-
-  .mainContact .secondSec {
-    margin: 20rem 0 2rem 5rem;
-  }
-}
-@media (max-width: 1000px) {
-  .mainContact .secondSec {
-    margin: 17rem 0 2rem 5rem;
-  }
-}
-@media (max-width: 900px) {
-  .mainContact .secondSec {
-    margin: 17rem 0 2rem 3rem;
-  }
-}
-@media (max-width: 885px) {
+@media (max-width: 660px) {
   .mainContact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 6rem 0 0 0;
   }
-
-  .mainContact .firstSec {
+  .mainContact .firstSec,
+.mainContact .secondSec {
     width: 75%;
-    margin: 0 auto;
   }
-
-  .mainContact .firstSec img {
-    width: 100%;
-    margin: 0;
-  }
-
   .mainContact .secondSec {
-    width: 92%;
-    margin: 0 auto;
-    padding-top: 4rem;
+    margin: 0 0 10rem 0;
   }
 }
-@media (max-width: 475px) {
-  .mainContact {
-    padding-bottom: 3rem;
-  }
-
-  .mainContact .firstSec {
-    width: 90%;
-    padding-top: 2rem;
-  }
-
-  .mainContact .secondSec {
-    padding-top: 2rem;
+@media (max-width: 480px) {
+  .mainContact .firstSec,
+.mainContact .secondSec {
+    width: 95%;
   }
 }
 .mainFlavours ul {
@@ -601,7 +567,7 @@ header .heaven img {
   }
 }
 .mainProducts {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Mali", sans-serif;
   scroll-behavior: smooth;
   padding: 5rem 3rem;
 }
@@ -623,7 +589,7 @@ header .heaven img {
 }
 .mainProducts .allBox h2 {
   font-size: 2rem;
-  font-family: "Mali";
+  font-family: "Mali", sans-serif;
   font-weight: 600;
   text-align: center;
   -ms-flex-item-align: center;
@@ -653,18 +619,27 @@ header .heaven img {
   }
 }
 .mainReviews {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Mali", sans-serif;
   scroll-behavior: smooth;
-  padding: 5rem 3rem 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6rem 0 5rem 0;
 }
 .mainReviews div {
   display: inline-block;
+  width: 65%;
   border: 2px solid white;
   border-radius: 50px;
   margin-bottom: 5rem;
 }
 .mainReviews div p {
-  padding: 2rem 4rem 0 4rem;
+  padding: 2rem 5rem 0 5rem;
 }
 .mainReviews div .rightAlign {
   font-weight: bold;
@@ -679,14 +654,26 @@ header .heaven img {
   color: #fd7db9;
 }
 
-@media (max-width: 650px) {
-  .mainReviews {
-    padding: 5rem 0rem;
+@media (max-width: 1070px) {
+  .mainReviews div {
+    width: 75%;
   }
 }
-@media (max-width: 490px) {
+@media (max-width: 888px) {
+  .mainReviews div {
+    width: 85%;
+  }
   .mainReviews div p {
-    padding: 2rem 1rem 0 1rem;
+    padding: 2rem 3rem 0 3rem;
+  }
+}
+@media (max-width: 575px) {
+  .mainReviews div {
+    width: 95%;
+  }
+  .mainReviews div p {
+    font-size: 0.8rem;
+    padding: 2rem 2rem 0 2rem;
   }
 }
 .mainBoxes,
@@ -694,7 +681,7 @@ header .heaven img {
 .mainTowers,
 .mainSpecials,
 .mainFlavours {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Mali", sans-serif;
   scroll-behavior: smooth;
   padding-bottom: 10rem;
 }
